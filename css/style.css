@@ -1,0 +1,176 @@
+*{box-sizing: border-box;
+margin:0;
+padding:0;} /*we want to reset all the margins etc first*/
+
+body{ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+a {text-decoration: none;}
+
+p{margin:0.75 rem 0;} /*so above we removed/ reset all the margins bt in fact we still need some that's why we are adding them back here*/
+
+.text-primary{color:#93cb52;}
+
+/*navbar styling*/
+#navbar {
+display:flex;
+background:#333;
+color:white;
+position:sticky;
+top:0; /*this is to make sure our navbar stays at the top as we scroll, it's like freeze the columns in excel.*/
+justify-content: space-between; /*we cannot use here flex-end bc then everything will be moved to the left and we want Edger ledge to stay on the right side.*/
+z-index:1; /*to make sure this stays of the top of everything else. The higher the number the more that section is on the top. SInce we don't have z-index for any other section, in this case 1 is enough*/
+padding:1rem;}
+
+#navbar ul{
+display:flex;
+align-items: center;
+list-style:none;
+}
+
+#navbar ul li a {color:white;
+padding:0.75rem;
+margin:0 0.25 rem;}
+
+#navbar ul li a:hover {background:#93cb52;
+    border-radius: 5px;
+}
+
+/*showcase styling*/
+#showcase {background:#333 url('../img/showcase.jpg') no-repeat center center/cover;
+height:100vh; /*we add this because without it our picture covers only actual text and not the rest of the page*/
+color:white;}
+
+#showcase .showcase-content{display:flex;
+flex-direction: column;
+font-size: 1.2rem;
+text-align: center;
+justify-content: center;
+align-items:center;
+height:100%; /*we need to add height in order to be able to align items*/
+padding:0 2rem;
+/*now we want our picture to be a bit more transparent*/
+position:absolute;
+top:60px;
+left:0px;
+right:0;
+bottom:0; /*these 3 will make sure transparency covers the whole picture even if we spread the site*/
+background-color: rgba(0,0,0,0.4);}
+
+.large-heading{font-size:4rem;
+margin-bottom: 0.75rem;
+line-height:1.1;}
+
+.btn{display:inline-block;
+color:white;
+background: #93cb52;
+padding:0.5rem 2rem;
+margin-top: 2rem;
+border:none;
+border-radius:5px;}
+
+.btn:hover{background:#7ab436;}
+
+/*what we do styling*/
+
+.container {max-width: auto;
+margin-bottom: 2.5rem;
+margin-left: 2.5rem;
+margin-right: auto;
+padding: 0 2 rem;
+overflow:hidden;
+text-align: center;}
+
+h2 {text-align: center;
+font-size: 2rem;
+padding: 2rem 0;} /*this is to add some space between the top image and our heading*/
+
+.items {display:flex;
+    text-align: center;} /*now they are next to each other*/
+
+#what .items .item{ flex: 1;
+text-align: center;
+color: #333; }
+
+#what .items .item i{background:#93cb52;
+color:#333; 
+padding:1rem;
+border-radius: 50%;
+margin-left: 1.3 rem;
+margin-bottom: 3rem;
+text-align: center;}
+
+
+/*who we are section styling*/
+
+#who{display:flex;}
+
+#who div {flex: 1; /*whis will divide page into 2 equal parts one for text and one for the image!!!*/
+padding:1rem;}
+
+#who .who-img{background: url('../img/people.jpg') no-repeat center center/cover;
+margin-right: 2rem;
+margin-top: 2 rem;
+padding-top: 2rem;}
+
+#who .who-text {background: #444;
+color: whitesmoke;
+justify-content: center;}
+
+#who .who-text .list{margin:0.5 rem 1rem;
+list-style:none;}
+
+#who .who-text .list li {padding:0.5rem 0;
+border-bottom: #444 dotted 1 px;}
+
+#who .who-text h3 {margin: 1.6rem 0;}
+
+#clients .items{display:flex;}
+
+#clients .items img {display:block;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 2rem;
+width:60%;
+align-items: center;
+text-align: center;}
+
+/*contact section*/
+
+#contact .contact-form {background:#93cb52;
+color:white;
+font-size: 1.3rem;}
+
+#contact {display:flex;
+}
+
+#contact .map, #contact .contact-form{flex:1;} /*so that they are even*/
+
+#contact .contact-form .form-group{margin:0.75rem;}
+
+#contact .contact-form label {display:block;
+font-size: 1.3rem;}
+
+#contact .contact-form input, 
+#contact .contact-form textarea {width:100%;
+padding: 0.6rem;
+border-radius: 10px;}
+
+#main-footer {background: #333333;
+text-align: center;
+color:whitesmoke;
+margin-top:1.2rem;
+padding-top:1.3rem;
+height:50px;}
+
+#send { 
+    background: white;
+    color:#333;
+
+align-items:center;
+font-size:1.3rem;
+display: inline-block;
+width:30%;
+}
+
+
+#message {font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}

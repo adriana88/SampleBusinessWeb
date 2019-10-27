@@ -1,0 +1,40 @@
+#what .items {display:block;}
+
+/*we want our icons to be aligned to left*/
+
+#what .items .item {display:flex;
+    text-align:left;}
+    
+    /*position icon*/
+    
+    #what .items .item i{margin-right:1.3rem;
+    align-self:center; /*this will make the icon round and not as is was oval*/
+    margin-bottom: 0;}
+
+
+    /*smartphones - even smaller than mobile - we are targetting them by using @media {}*/
+
+    @media(max-width:500px){
+        #navbar {flex-direction: column; /*the navbar items will be now displayed under edge ledger and not next to it*/
+        align-items:center;}
+
+        #navbar .logo {margin-bottom: 0.75rem;
+            text-align: center;}
+        
+        .#showcase .showcase-content {top:110px;} /*for regular screens top was 65 px but since our navbar is bigger now, items are not next to each other, our picture was not overcast, transpaernt in the whole, so we needed to add some more px - 110px*/
+
+        #who{display:block;} /*we want to get rid of the picture on smartphones so there is no need for flex diaplay here*/
+
+
+        #who .who-img {display:none;}
+
+        #clients .items img {width:80%;} /*on normal screens width was 60%, we want them bigger now plus we want to get rid of the last icon*/
+
+        #clients .items div:last-child {display:none;}
+
+        #contact {flex-direction: column;} /*we want the map to be below contact form now. But now we cannot see it as it is attached to contact form horizontally. To fix this we need to set up the height of the map*/
+
+        #contact .map{height:200px;
+        border-top: 4px solid #333;}
+        
+    }

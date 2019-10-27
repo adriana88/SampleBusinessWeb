@@ -1,0 +1,13 @@
+/*we want our icons to be aligned to left*/
+
+#what .items .item {display:flex;
+text-align:left;}
+
+/*position icon*/
+
+#what .items .item i{margin-right:1.3rem;
+align-self:center; /*this will make the icon round and not as is was oval*/
+margin-bottom: 0;}
+
+/*our map should be bigger on tablets*/
+#contac .map {flex:2;}

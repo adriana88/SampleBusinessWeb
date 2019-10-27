@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/11b57cc16f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css"> <!--this main css style should be above mobile and widescreen. Otherwise, the main css will overwrite what we have in mobile and widescreen-->
+   <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+   <link rel="stylesheet" media="screen and (min-width:1100px)" href="css/widescreen.css">
+    <title>Company XYZ Financial | Accounting and finances</title>
+</head>
+<body id="home">
+
+<!--this is our navbar-->    
+    <nav id="navbar">
+        <h1 class="logo">
+<span class="text-primary">
+    <i class="fas fa-book-open"></i> Company</span> XYZ <!--so we add span to have our icon and word edge in green. i stands for icon and fas fa...is just the name of this particular book icon we want before Edge Ledger--></h1>
+    <ul>
+        <li><a href="#home">Home</a> </li>
+        <li><a href="#what">What We Do</a> </li>
+        <li><a href="#who">Our People</a> </li>
+        <li><a href="#contact">Contact</a> </li>
+    </ul>
+        
+    </nav>
+
+<!--header:showcase-->
+<header id="showcase">
+    <div class="showcase-content">
+        <h1 class="large-heading">The Sky is the limit</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias odit rem est. Soluta, dolores deserunt? Amet voluptatum autem quos voluptatibus!</p>
+        <a href="#what" class="btn">Read more</a>
+    </div>
+</header>
+
+
+<!--section what we do-->
+
+<section id="what">
+    <div class="container">
+        <h2> <span class="text-primary">What</span> we do </h2>
+        <div class="items"><!--so this is a container for all of our 3 items below, within the container "items" we'll have our actual 3 items-->
+            <div class="item">
+                <i class="fas fa-university fa-2x"></i> <!--this is to add the icon from that webpage i stands for icon and name of the icon is taken from the website. fa-2x means that icon should be 2 times bigger-->
+                <div>
+                    <h3>Investment Banking</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, nostrum.</p>
+                </div>
+            </div>
+            <div class="item">
+                    <i class="fas fa-book-reader fa-2x"></i> <!--this is to add the icon from that webpage i stands for icon and name of the icon is taken from the website. fa-2x means that icon should be 2 times bigger-->
+                    <div>
+                        <h3>Portfolio Management</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, nostrum.</p>
+                    </div>
+            </div>
+            <div class="item">
+                    <i class="fas fa-pencil-alt fa-2x"></i> <!--this is to add the icon from that webpage i stands for icon and name of the icon is taken from the website. fa-2x means that icon should be 2 times bigger-->
+                    <div>
+                        <h3>Tax & Custodial</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, nostrum.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--now the who we are section. This is a section divided into 2. One is a n image and sec is text. We will not add any containers here as we want this section to spread across the wole page width-->
+<section id="who">
+<div class="who-img"></div>
+<div class="who-text">
+    <h2>Who we are</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur voluptas dolor ut expedita voluptatem quos. Fugiat eveniet quae ducimus, magnam ex, ab dolorem consectetur reprehenderit, possimus animi quis at autem?</p>
+    <h3>Our Team</h3>
+    <ul class="list">
+        <li>Mark Smith: CEO</li>
+        <li>Shanon Johnoson: CFO</li>
+        <li>Lida Mark: Lead Accountant</li>
+        <li>Kara Jackson: Senior Accountan</li>
+        <li>Michel Jahn: CRM Manager</li>
+    </ul>
+</div>
+</section>
+
+<!--clients section-->
+
+<section id="clients">
+<div class="container">
+    <h2>Our clients</h2>
+    <div class="items">
+        <div> <img src="logos/logo1.png" alt="client"></div>
+        <div> <img src="logos/logo2.png" alt="client"></div>
+        <div> <img src="logos/logo3.png" alt="client"></div>
+        <div> <img src="logos/logo4.png" alt="client"></div>
+        <div> <img src="logos/logo5.png" alt="client"></div>
+
+    </div>
+</div>
+</section>
+
+<!--contact section-->
+<section id="contact">
+    <div class="contact-form">
+        <h2>Contact us</h2>
+ 
+        <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="enter your name">
+        </div>        
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="enter your email">
+        </div>        
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" placeholder="enter your phone">
+        </div>        
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="enter your message"></textarea>
+              </div>      
+        <input type="submit" value="Send" id="send">  <!--this is for the form send button-->
+    </form>
+    </div>
+
+    <!--AIzaSyAFrEUgTfyBUtdk_c_H5_ap18VO0XqiCac - this is our Api key, we need to kopy this in the js file we'll take from google-->
+    <div class="map"></div>
+</section>
+
+<!--footer-->
+
+<footer id="main-footer">
+    <div class="container">
+        <p> Copyright &copy;2019 All rights reserved</p>
+    </div>
+</footer>
+
+<!--Jquery CDN - we take this link from google Jquery CDN - this needs to be above the JS file-->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<!--local JS file-->
+<script src="main.js"></script> <!--this is to link to our js file script:src enter-->
+
+<!--Google maps JS-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFrEUgTfyBUtdk_c_H5_ap18VO0XqiCac&callback=initMap"
+    async defer></script> <!--JS IDZIE NA KONIEC html-->
+</body>
+</html>
